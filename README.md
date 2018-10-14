@@ -1,12 +1,36 @@
 # Cordova Android Preserve State Plugin
 
-A simple cordova plugin to access android saveInstanceState, and restore application state when cleared from ram.
+(Android only) A simple cordova plugin to access android saveInstanceState, and restore application state when cleared from ram.
 
 This plugin is useful for storing information that needs to persist while the app is open, regardless of if it's activity has been stopped. The state string will only cleared when the app is *closed*.
     
 ## Installation
 
     $ cordova plugin add https://github.com/terpro/cordova-plugin-preserve-state.git
+    
+But wait, **theres more!**
+
+### You'll also need to make some changes to CordovaActivity.java
+
+This file can be found at platforms\android\CordovaLib\src\org\apache\cordova\cordovaActivity.java
+
+Add the following on **line 109** inside of the onCreate function:
+
+```java
+String saved_hash = "#";
+
+if (savedInstanceState != null) {
+	saved_hash = savedInstanceState.getString("SAVED_HASH");
+}
+
+preferences.set("saved_hash", saved_hash);
+```
+
+And then add the following on the now **line 485** in the onSaveInstanceState function:
+
+```java
+outState.putString("SAVED_HASH", preferences.getString("saved_hash", "#"));
+```
 
 ## Usage
 	
