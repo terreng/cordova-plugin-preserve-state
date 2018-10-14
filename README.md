@@ -1,41 +1,44 @@
-# Cordova Get Android PID Plugin
+# Cordova Android Preserve State Plugin
 
-Simple plugin that returns your the current android process id.
+A simple cordova plugin to access android saveInstanceState, and restore application state when cleared from ram
     
 ## Installation
 
-    $ cordova plugin add https://github.com/terpro/cordova-plugin-getpid.git
-    
+    $ cordova plugin add https://github.com/terpro/cordova-plugin-preserve-state.git
 
 ## Usage
 	
-getpid.pid availible after `onDeviceReady`
+preservestate.getState and preservestate.setState availible after `onDeviceReady`
+
+### preservestate.getState
 
 ```js
-    getpid.pid(appendProcStartTime, successCallback, errorCallback);
+    preservestate.getState(successCallback, errorCallback);
 ```
 
-### Parameters
+#### Parameters
 
-appendProcStartTime: (true or false) Also return the android getStartElapsedRealtime value. Useful because PIDs can be resued.
+**successCallback:** *(function)* Will return state string
 
-successCallback: (function) Will return process id
+**errorCallback:** *(function)* I don't imagine you'll get any errors.. but just in case
 
-errorCallback: (function) I don't imagine you'll get any errors.. but just in case
+### preservestate.setState
+
+```js
+    preservestate.setState(stateString, successCallback, errorCallback);
+```
+
+#### Parameters
+
+**stateString:** *(string)* A string containing everything you need to remember where you are in the app (for my use case, the current hash) 
+
+**successCallback:** *(function)* Will return state string (the same one you just set)
+
+**errorCallback:** *(function)* I don't imagine you'll get any errors.. but just in case
 
 ### Example code
 
 ```js
-    var success = function(pid) {
-        alert(pid);
-    }
 
-    var error = function() {
-        alert("Something has gone horribly wrong");
-    }
-
-    getpid.pid(true, success, error);
 ```
 
-Example PID: 7829
-Example PID with procStartTime appended: 7829-1089503499
