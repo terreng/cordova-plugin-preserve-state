@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-preservestate",
+  "version": "0.1.0",
+  "description": "A simple cordova plugin to access android saveInstanceState",
+  "cordova": {
+    "id": "cordova-plugin-preservestate",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terpro/cordova-plugin-preservestate.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "preservestate",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Terren Programming",
+  "license": "Apache-2",
+  "bugs": {
+    "url": "https://github.com/terpro/cordova-plugin-preservestate/issues"
+  },
+  "homepage": "https://github.com/terpro/cordova-plugin-preservestate#readme"
+}
