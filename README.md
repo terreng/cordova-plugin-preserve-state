@@ -1,6 +1,8 @@
 # Cordova Android Preserve State Plugin
 
-A simple cordova plugin to access android saveInstanceState, and restore application state when cleared from ram
+A simple cordova plugin to access android saveInstanceState, and restore application state when cleared from ram.
+
+This plugin is useful for storing information that needs to persist while the app is open, regardless of if it's activity has been stopped. The state string will only cleared when the app is *closed*.
     
 ## Installation
 
@@ -18,7 +20,7 @@ preservestate.getState(successCallback, errorCallback);
 
 #### Parameters
 
-**successCallback:** *(function)* Will return state string
+**successCallback:** *(function)* Will return previously stored state string (or "#" if undefined)
 
 **errorCallback:** *(function)* I don't imagine you'll get any errors.. but just in case
 
