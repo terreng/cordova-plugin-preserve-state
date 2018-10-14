@@ -36,9 +36,24 @@ preservestate.getState and preservestate.setState availible after `onDeviceReady
 
 **errorCallback:** *(function)* I don't imagine you'll get any errors.. but just in case
 
-### Example code
+## Example code
+
+### Set hash from previously stored state
 
 ```js
-
+	document.addEventListener("deviceready", function() {
+		
+		preservestate.getState(function(state) {
+		
+			location.hash = state;
+		
+		})
+		
+	}, false);
 ```
 
+### Store current state
+
+```js
+	preservestate.setState(location.hash)
+```
