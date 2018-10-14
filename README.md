@@ -13,7 +13,7 @@ preservestate.getState and preservestate.setState availible after `onDeviceReady
 ### preservestate.getState
 
 ```js
-    preservestate.getState(successCallback, errorCallback);
+preservestate.getState(successCallback, errorCallback);
 ```
 
 #### Parameters
@@ -25,7 +25,7 @@ preservestate.getState and preservestate.setState availible after `onDeviceReady
 ### preservestate.setState
 
 ```js
-    preservestate.setState(stateString, successCallback, errorCallback);
+preservestate.setState(stateString, successCallback, errorCallback);
 ```
 
 #### Parameters
@@ -41,19 +41,19 @@ preservestate.getState and preservestate.setState availible after `onDeviceReady
 ### Set hash from previously stored state
 
 ```js
-	document.addEventListener("deviceready", function() {
+document.addEventListener("deviceready", function() {
 		
-		preservestate.getState(function(state) {
+	preservestate.getState(function(state) {
 		
-			location.hash = state;
+		location.hash = state;
 		
-		})
+	})
 		
-	}, false);
+}, false);
 ```
 
 ### Store current state
 
 ```js
-	preservestate.setState(location.hash)
+preservestate.setState(location.hash)
 ```
