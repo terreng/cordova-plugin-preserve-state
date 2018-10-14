@@ -32,6 +32,8 @@ And then add the following on the now **line 485** in the onSaveInstanceState fu
 outState.putString("SAVED_HASH", preferences.getString("saved_hash", "#"));
 ```
 
+I've also uploaded an example file with all of the changes I just described made: https://github.com/terpro/cordova-plugin-preserve-state/blob/master/CordovaActivity.java
+
 ## Usage
 	
 preservestate.getState and preservestate.setState availible after `onDeviceReady`
