@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/terpro/cordova-plugin-preservestate.git"
+    "url": "git+https://github.com/terreng/cordova-plugin-preservestate.git"
   },
   "keywords": [
     "cordova",
@@ -19,10 +19,10 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "Terren Programming",
+  "author": "terreng",
   "license": "Apache-2",
   "bugs": {
-    "url": "https://github.com/terpro/cordova-plugin-preservestate/issues"
+    "url": "https://github.com/terreng/cordova-plugin-preservestate/issues"
   },
-  "homepage": "https://github.com/terpro/cordova-plugin-preservestate#readme"
+  "homepage": "https://github.com/terreng/cordova-plugin-preservestate#readme"
 }
