@@ -1,16 +1,16 @@
 {
-  "name": "cordova-plugin-preservestate",
+  "name": "cordova-plugin-preserve-state",
   "version": "0.1.0",
   "description": "A simple cordova plugin to access android saveInstanceState",
   "cordova": {
-    "id": "cordova-plugin-preservestate",
+    "id": "cordova-plugin-preserve-state",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/terreng/cordova-plugin-preservestate.git"
+    "url": "git+https://github.com/terreng/cordova-plugin-preserve-state.git"
   },
   "keywords": [
     "cordova",
@@ -20,9 +20,9 @@
     "cordova-android"
   ],
   "author": "terreng",
-  "license": "Apache-2",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/terreng/cordova-plugin-preservestate/issues"
+    "url": "https://github.com/terreng/cordova-plugin-preserve-state/issues"
   },
-  "homepage": "https://github.com/terreng/cordova-plugin-preservestate#readme"
+  "homepage": "https://github.com/terreng/cordova-plugin-preserve-state#readme"
 }
