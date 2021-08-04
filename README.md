@@ -6,7 +6,7 @@ This plugin is useful for storing information that needs to persist while the ap
     
 ## Installation
 
-    $ cordova plugin add https://github.com/terpro/cordova-plugin-preserve-state.git
+    $ cordova plugin add https://github.com/terreng/cordova-plugin-preserve-state.git
     
 But wait, **theres more!**
 
@@ -32,7 +32,7 @@ And then add the following on the now **line 485** in the onSaveInstanceState fu
 outState.putString("SAVED_HASH", preferences.getString("saved_hash", "#"));
 ```
 
-I've also uploaded an example file with all of the changes I just described made: https://github.com/terpro/cordova-plugin-preserve-state/blob/master/CordovaActivity.java
+I've also uploaded an example file with all of the changes I just described made: https://github.com/terreng/cordova-plugin-preserve-state/blob/master/CordovaActivity.java
 
 ## Usage
 	
