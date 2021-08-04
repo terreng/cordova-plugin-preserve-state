@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.terrenprogramming.preservestate"
-        version="0.7.0">
+        version="0.2.0">
 
   <name>Preserve State</name>
+  <license>MIT</license>
+    <repo>https://github.com/terreng/cordova-plugin-preserve-state.git</repo>
+    <issue>https://github.com/terreng/cordova-plugin-preserve-state/issues</issue>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>

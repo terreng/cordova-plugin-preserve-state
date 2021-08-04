@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-preserve-state",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple cordova plugin to access android saveInstanceState",
   "cordova": {
     "id": "cordova-plugin-preserve-state",
