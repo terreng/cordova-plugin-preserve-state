@@ -14,7 +14,7 @@ But wait, **theres more!**
 
 This file can be found at platforms\android\CordovaLib\src\org\apache\cordova\cordovaActivity.java
 
-Add the following on **line 109** inside of the onCreate function:
+Add the following on **line 115** inside of the onCreate function (right after `loadConfig();`):
 
 ```java
 String saved_hash = "#";
@@ -26,7 +26,7 @@ if (savedInstanceState != null) {
 preferences.set("saved_hash", saved_hash);
 ```
 
-And then add the following on the now **line 485** in the onSaveInstanceState function:
+And then add the following on the now **line 501** in the onSaveInstanceState function (right before `super.onSaveInstanceState(outState);`):
 
 ```java
 outState.putString("SAVED_HASH", preferences.getString("saved_hash", "#"));
